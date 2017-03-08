@@ -1,0 +1,41 @@
+#!/bin/bash
+curl 'http://localhost:8080/api/v1?command=agencyList'
+sleep 1
+curl 'http://localhost:8080/api/v1?command=routeList&a=moorpark'
+sleep 1
+curl 'http://localhost:8080/api/v1?command=routeConfig&a=rutgers&r=rexb'
+sleep 1
+curl 'http://localhost:8080/api/v1?command=predictions&a=ucsf&stopId=35'
+sleep 1
+curl 'http://localhost:8080/api/v1?command=predictions&a=simi-valley&stopId=40018&routeTag=a'
+sleep 1
+curl 'http://localhost:8080/api/v1?command=predictionsForMultiStops&a=sf-muni&stops=N|6997&stops=N|3909'
+sleep 1
+curl 'http://localhost:8080/api/v1?command=schedule&a=radford&r=20R'
+sleep 1
+curl 'http://localhost:8080/api/v1?command=messages&a=south-coast&r=4a&r=22'
+sleep 1
+curl 'http://localhost:8080/api/v1?command=vehicleLocations&a=collegetown&r=red&t=1144953500233'
+
+curl 'http://localhost:8080/api/v1?command=vehicleLocations&a=collegetown&r=red&t=1144953500233'
+curl 'http://localhost:8080/api/v1?command=agencyList'
+curl 'http://localhost:8080/api/v1?command=routeList&a=moorpark'
+curl 'http://localhost:8080/api/v1?command=agencyList'
+curl 'http://localhost:8080/api/v1?command=routeConfig&a=rutgers&r=rexb'
+curl 'http://localhost:8080/api/v1?command=predictions&a=ucsf&stopId=35'
+curl 'http://localhost:8080/api/v1?command=predictions&a=simi-valley&stopId=40018&routeTag=a'
+curl 'http://localhost:8080/api/v1?command=predictionsForMultiStops&a=sf-muni&stops=N|6997&stops=N|3909'
+curl 'http://localhost:8080/api/v1?command=predictions&a=ucsf&stopId=35'
+curl 'http://localhost:8080/api/v1?command=predictions&a=ucsf&stopId=35'
+curl 'http://localhost:8080/api/v1?command=predictions&a=ucsf&stopId=35'
+curl 'http://localhost:8080/api/v1?command=schedule&a=radford&r=20R'
+curl 'http://localhost:8080/api/v1?command=agencyList'
+curl 'http://localhost:8080/api/v1?command=messages&a=south-coast&r=4a&r=22'
+curl 'http://localhost:8080/api/v1?command=vehicleLocations&a=collegetown&r=red&t=1144953500233'
+curl 'http://localhost:8080/api/v1?command=predictions&a=ucsf&stopId=35'
+curl 'http://localhost:8080/api/v1?command=vehicleLocations&a=collegetown&r=red&t=1144953500233'
+curl 'http://localhost:8080/api/v1?command=vehicleLocations&a=collegetown&r=red&t=1144953500233'
+curl 'http://localhost:8080/api/v1?command=vehicleLocations&a=collegetown&r=red&t=1144953500233'
+
+curl 'http://localhost:8080/api/v1/stats'
+curl 'http://localhost:8080/api/v1/stats'
