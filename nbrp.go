@@ -223,7 +223,7 @@ func main() {
 
     /* Query is not present in cache */
     remoteURI := "http://webservices.nextbus.com/service/publicXMLFeed" + query
-    request := gorequest.New()
+    request := gorequest.New().Timeout(5*time.Second)
     resp, body, errs := request.Get(remoteURI).End()
     if (errs != nil) {
         e.Logger.Warn(errs)
